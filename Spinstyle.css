@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    height: 60vh;
+    display: grid;
+    margin: 0;
+}
+.back1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    border: #111 solid;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Rubik Bubbles', cursive;
+    color: rgb(255, 255, 255);
+    background-color: rgb(5, 5, 5);
+    min-width: 100%;
+    height: 90px;
+  }
+.loader-wrapper {
+    
+    width: 60px;
+    height: 60px;
+}
+.loader {
+    box-sizing: border-box; 
+    width: 100%; 
+    height: 100%; 
+    border: 10px solid #ffffff; 
+    border-top-color: #fa631d; 
+    border-bottom-color: #e61717;
+    border-radius: 50%; 
+    animation: rotate 5s linear infinite;
+}
+.loader-inner{
+    
+    border-top-color: #fab22b;
+    border-bottom-color: #fff;
+    animation-duration: 2.5s;
+}
+@keyframes rotate {
+    0%{
+        transform: scale(1) rotate(360deg);
+    }
+    50%{
+        transform: scale(.8) rotate(-360deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
